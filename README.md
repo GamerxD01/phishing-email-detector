@@ -11,7 +11,7 @@ This repository implements a data science workflow—from Exploratory Data Analy
 The workspace contains the following files:
 
 *   **[phishing_detector.ipynb](phishing_detector.ipynb)**: The main Jupyter Notebook containing the full data science pipeline, models, and execution outputs.
-*   **phishing_email.csv** *(106.6 MB)*: The dataset containing email texts and their corresponding labels (Safe or Phishing). Note: This file is ignored by Git to comply with GitHub's file size limits (<100 MB).
+*   **[phishing_email.csv](phishing_email.csv)** *(11.8 MB)*: The dataset containing email texts and their corresponding labels (Safe or Phishing). A shortened, stratified version of 10,000 rows is included directly in this repository for easy execution and compatibility.
 *   **[feature_comparison.png](feature_comparison.png)**: A bar chart visualizing the differences in average URL count and average keyword count between safe and phishing emails.
 *   **[confusion_matrix.png](confusion_matrix.png)**: Heatmap representing the confusion matrix for the best-performing model (Random Forest).
 
@@ -120,8 +120,8 @@ predictions = best_model.predict([
     git clone <your-repository-url>
     cd phishing-email-detector
     ```
-2.  **Download the Dataset**:
-    *   Obtain the `phishing_email.csv` dataset and place it in the root directory.
+2.  **Dataset Availability**:
+    *   The repository already includes the shortened dataset `phishing_email.csv` (10,000 rows), so you can run the notebook directly without any extra downloads!
 3.  **Install Dependencies**:
     ```bash
     pip install pandas numpy scikit-learn matplotlib seaborn notebook

@@ -1,5 +1,4 @@
-# Ignore the large dataset file (exceeds GitHub's 100MB limit)
-phishing_email.csv
+
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
